@@ -17,7 +17,7 @@ import { dark } from './styles/Themes';
 function App() {
   return (
     <>
-        < GlobalStyles />
+      <GlobalStyles />
       <ThemeProvider theme={light}>
         <Navbar/>
         <Home/>
