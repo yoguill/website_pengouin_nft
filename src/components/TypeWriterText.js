@@ -18,9 +18,12 @@ span{
     color : blue;
 }
 .text-2{
-    color : orange;
+    color : green;
 }
 .text-3{
+    color : orange;
+}
+.text-4{
     color : red;
 }
 `
@@ -45,7 +48,7 @@ function TypeWriterText() {
     return (
         <>
         <Title>
-            Discover a new era of cool
+        Discover a way to contribute to biodiversity...
             <Typewriter options={{
                 autoStart: true,
                 loop: true
@@ -54,17 +57,20 @@ function TypeWriterText() {
                     typewriter.typeString('<span class="text-1">NFTs.</span>')
                         .pauseFor()
                         .deleteAll()
-                        .typeString('<span class="text-2">Collectible Items.</span>')
+                        .typeString('<span class="text-2">Protect Biodiversity.</span>')
                         .pauseFor()
                         .deleteAll()
-                        .typeString('<span class="text-3">Ape Killers!</span> ')
+                        .typeString('<span class="text-3">Collectible Items.</span> ')
+                        .pauseFor()
+                        .deleteAll()
+                        .typeString('<span class="text-4">Lottery Gifts.</span> ')
                         .pauseFor()
                         .deleteAll()
                         .start()
                 }}
             />
             </Title>
-            <Subtitle>Bored of Apes? Try Something New.</Subtitle>
+            <Subtitle>Bored of somes project ? Try Something New !</Subtitle>
             <ButtonContainer>
                 <Button text="Explore" link="#about" />
             </ButtonContainer>
