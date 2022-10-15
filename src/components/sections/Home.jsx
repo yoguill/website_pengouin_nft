@@ -28,7 +28,7 @@ const Box = styled.div`
   justify-content: center;
   align-items: center;
 `
-function Home() {
+const Home = () => {
   return (
     <Section>
       <Container>

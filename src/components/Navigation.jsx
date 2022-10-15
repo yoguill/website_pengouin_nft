@@ -44,7 +44,7 @@ const MenuItem = styled.li`
   width: 100%;
 }
 `
-function Navigation() {
+const Navigation = () => {
   return (
     <Section>
       <Navbar>

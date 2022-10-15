@@ -14,7 +14,7 @@ import { dark } from './styles/Themes';
 
 
 
-function App() {
+const App = () => {
   return (
     <>
       <GlobalStyles />

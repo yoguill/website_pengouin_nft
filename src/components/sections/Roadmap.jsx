@@ -115,7 +115,7 @@ const RoadMapItem = ({ title, subtext, addToRef }) => {
   )
 }
 
-function Roadmap() {
+const Roadmap = () => {
   const revealRefs = useRef([]);
   revealRefs.current = [];
   gsap.registerPlugin(ScrollTrigger);

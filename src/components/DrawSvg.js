@@ -37,7 +37,7 @@ animation: ${Bounce} 0.5s linear infinite alternate;
 `
 
 
-function DrawSvg() {
+const DrawSvg = () => {
 
   const ref = useRef(null);
   const ballref = useRef(null);

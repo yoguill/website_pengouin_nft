@@ -44,7 +44,7 @@ const ButtonContainer = styled.div`
     align-self: flex-start;
 `
 
-function TypeWriterText() {
+const TypeWriterText = () => {
     return (
         <>
         <Title>

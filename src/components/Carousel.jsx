@@ -72,7 +72,7 @@ const Container = styled.div`
 }
 `
 
-function Carousel() {
+const Carousel = () => {
   return (
     <Container>
     <Swiper

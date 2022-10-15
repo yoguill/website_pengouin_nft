@@ -13,7 +13,7 @@ video{
 }
 `
 
-function CoverVideo() {
+const CoverVideo = () => {
   return (
     <VideoContainer>
         <video src={GIF} type="video/mp4" autoPlay muted loop/>

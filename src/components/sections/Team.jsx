@@ -112,7 +112,7 @@ const MemberComponent = ({img, name =" ", position="" }) => {
   )
 }
 
-function Team() {
+const Team = () => {
   return (
     <Section>
       <Confetti/>
