@@ -10,6 +10,7 @@ import GlobalStyles from './styles/GlobalStyles';
 import { ThemeProvider } from 'styled-components'
 import { light } from './styles/Themes';
 import { dark } from './styles/Themes';
+import ScrollToTop from './components/ScrollToTop';
 
 
 
@@ -27,6 +28,7 @@ const App = () => {
         <Team/>
         <Faq/>
         <Footer/>
+        <ScrollToTop/>
       </ThemeProvider>
     </>
   );

@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import { useState } from 'react'
-import { Minus } from '../components/Minus'
-import { Plus } from '../components/Plus'
+import { Minus } from './Icons/Minus'
+import { Plus } from './Icons/Plus'
 
 const Container = styled.div`
 cursor: pointer;
@@ -11,6 +11,10 @@ display: flex;
 flex-direction: column;
 border-bottom: 1px solid ${props => props.theme.carouselColor};
 margin: 3rem 0;
+
+@media (max-width: 48em){
+  margin:2rem 0 ;
+}
 `
 
 const Title = styled.div`
@@ -42,6 +46,10 @@ svg{
   width:1rem;
   height:auto;
   fill:${props => props.theme.carouselColor};
+}
+
+@media (max-width: 48em){
+  font-size:${props => props.theme.fontxl};
 }
 `
 

@@ -20,6 +20,10 @@ align-items:center;
 margin: 1rem auto;
 border-bottom: 2px solid ${props => props.theme.text};
 width: fit-content;
+
+@media (max-width: 40em){
+  font-size: ${props => props.theme.fontxl};
+  }
 `
 const Container = styled.div`
   width:70%;
@@ -30,6 +34,13 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
+
+  @media (max-width: 64em){
+    width: 80%;
+  }
+  @media (max-width: 48em){
+    width: 90%;
+  }
 `
 const SvgContainer = styled.div`
   display:flex;
@@ -44,13 +55,30 @@ const Items = styled.ul`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 48em){
+    width: 90%;
+  }
   
 
   &>*:nth-of-type(2n + 1){
     justify-content: start;
+
+    @media (max-width: 48em){
+      justify-content: center;
+  }
+
     div{
       border-radius: 50px 0 50px 0;
       text-align:right;
+
+      @media (max-width: 48em){
+      border-radius: 0 50px 0 50px;
+      text-align: left;
+      p{
+        border-radius: 0 40px 0 40px;
+      }
+  }
     }
     p{
       border-radius: 40px 0 40px 0;
@@ -58,9 +86,15 @@ const Items = styled.ul`
   }
   &>*:nth-of-type(2n){
     justify-content: end;
+    @media (max-width: 48em){
+      justify-content: center;
+  }
     div{
+      
       border-radius: 0 50px 0 50px;
       text-align:left;
+
+     
     }
     p{
       border-radius: 0 40px 0 40px;
@@ -71,6 +105,10 @@ const Item = styled.li`
   width: 100%;
   height: 100%;
   display: flex;
+
+  @media (max-width: 48em){
+    justify-content: flex-end !important;
+  }
 `
 
 const ItemContainer = styled.div`
@@ -78,6 +116,11 @@ const ItemContainer = styled.div`
   height: fit-content;
   padding: 1rem;
   border: 3px solid ${props => props.theme.text};
+
+  @media (max-width: 48em){
+    width: 70%;
+  }
+  
 `
 const Box = styled.p`
   height: fit-content;
@@ -92,6 +135,10 @@ display: block;
 font-size:${props => props.theme.fontxl};
 text-transform: capitalize;
 color: ${props => props.theme.text};
+@media (max-width: 40em){
+  font-size: ${props => props.theme.fontlg};
+  font-weight: 600;
+  }
 `
 const Text = styled.span`
 display: block;
@@ -100,6 +147,9 @@ text-transform: capitalize;
 color: ${props => props.theme.text};
 font-weight: 400;
 margin: 0.5rem 0;
+@media (max-width: 40em){
+  font-size: ${props => props.theme.fontxs};
+  }
 `
 
 const RoadMapItem = ({ title, subtext, addToRef }) => {
@@ -121,35 +171,35 @@ const Roadmap = () => {
   gsap.registerPlugin(ScrollTrigger);
 
   const addToRefs = (el) => {
-    if(el && !revealRefs.current.inlucdes(el)) {
+    if (el && !revealRefs.current.inlucdes(el)) {
       revealRefs.current.push(el);
     }
   }
 
   useLayoutEffect(() => {
     let t1 = gsap.timeline();
-    revealRefs.current.forEach((el,index) =>{
+    revealRefs.current.forEach((el, index) => {
       t1.fromTo(
         el.childNodes[0],
         {
           y: '0'
-        },{       
-          y:'-30%',
+        }, {
+        y: '-30%',
 
-          scrollTrigger:{
-            id: `section-${index + 1 }`,
-            trigger: el,
-            start: 'top center+=200px',
-            end:'bottom center',
-            scrub:true,
-          }
-
+        scrollTrigger: {
+          id: `section-${index + 1}`,
+          trigger: el,
+          start: 'top center+=200px',
+          end: 'bottom center',
+          scrub: true,
         }
+
+      }
       )
     })
-  
+
     return () => {
-      
+
     };
   }, [])
 
@@ -158,7 +208,7 @@ const Roadmap = () => {
 
 
   return (
-    <Section>
+    <Section id="roadmap">
       <Title>Roadmap</Title>
       <Container>
         <SvgContainer>
@@ -166,13 +216,13 @@ const Roadmap = () => {
         </SvgContainer>
         <Items>
           <Item>&nbsp;</Item>
-          <RoadMapItem   addtoRef={addToRefs} title="This is title" subtext="this is usub text"/>
-          <RoadMapItem   addtoRef={addToRefs} title="This is title" subtext="this is usub text"/>
-          <RoadMapItem   addtoRef={addToRefs} title="This is title" subtext="this is usub text"/>
-          <RoadMapItem   addtoRef={addToRefs} title="This is title" subtext="this is usub text"/>
-          <RoadMapItem   addtoRef={addToRefs} title="This is title" subtext="this is usub text"/>
-          <RoadMapItem   addtoRef={addToRefs} title="This is title" subtext="this is usub text"/>
-          <RoadMapItem   addtoRef={addToRefs} title="This is title" subtext="this is usub text"/>
+          <RoadMapItem addtoRef={addToRefs} title="This is title" subtext="this is usub text" />
+          <RoadMapItem addtoRef={addToRefs} title="This is title" subtext="this is usub text" />
+          <RoadMapItem addtoRef={addToRefs} title="This is title" subtext="this is usub text" />
+          <RoadMapItem addtoRef={addToRefs} title="This is title" subtext="this is usub text" />
+          <RoadMapItem addtoRef={addToRefs} title="This is title" subtext="this is usub text" />
+          <RoadMapItem addtoRef={addToRefs} title="This is title" subtext="this is usub text" />
+          <RoadMapItem addtoRef={addToRefs} title="This is title" subtext="this is usub text" />
         </Items>{addToRefs}
       </Container>
     </Section>
