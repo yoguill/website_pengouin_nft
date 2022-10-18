@@ -19,7 +19,7 @@ const App = () => {
   return (
     <>
       <GlobalStyles />
-      <ThemeProvider theme={light}>
+      <ThemeProvider theme={dark}>
         <Navbar/>
         <Home/>
         <About/>

@@ -134,7 +134,8 @@ const SubTitle = styled.span`
 display: block;
 font-size:${props => props.theme.fontxl};
 text-transform: capitalize;
-color: ${props => props.theme.text};
+font-weight: 500;
+color: ${props => props.theme.body};
 @media (max-width: 40em){
   font-size: ${props => props.theme.fontlg};
   font-weight: 600;
@@ -144,7 +145,7 @@ const Text = styled.span`
 display: block;
 font-size:${props => props.theme.fontsm};
 text-transform: capitalize;
-color: ${props => props.theme.text};
+color: ${props => props.theme.body};
 font-weight: 400;
 margin: 0.5rem 0;
 @media (max-width: 40em){
@@ -216,13 +217,11 @@ const Roadmap = () => {
         </SvgContainer>
         <Items>
           <Item>&nbsp;</Item>
-          <RoadMapItem addtoRef={addToRefs} title="This is title" subtext="this is usub text" />
-          <RoadMapItem addtoRef={addToRefs} title="This is title" subtext="this is usub text" />
-          <RoadMapItem addtoRef={addToRefs} title="This is title" subtext="this is usub text" />
-          <RoadMapItem addtoRef={addToRefs} title="This is title" subtext="this is usub text" />
-          <RoadMapItem addtoRef={addToRefs} title="This is title" subtext="this is usub text" />
-          <RoadMapItem addtoRef={addToRefs} title="This is title" subtext="this is usub text" />
-          <RoadMapItem addtoRef={addToRefs} title="This is title" subtext="this is usub text" />
+          <RoadMapItem addtoRef={addToRefs} title="Marketing" subtext="Influencer marketing, social media pub, share and win some goodies" />
+          <RoadMapItem addtoRef={addToRefs} title="Whitelist" subtext="whitelist distribution by discord" />
+          <RoadMapItem addtoRef={addToRefs} title="Mint launch" subtext="Launch of the ping-win mint phase, whitelist before & public after" />        
+          <RoadMapItem addtoRef={addToRefs} title="Lottery launch" subtext="When 150 Ping-win have been purchased, the lottery phase will begin" />
+          <RoadMapItem addtoRef={addToRefs} title="And some other news" subtext="stay informed on social networks" />
         </Items>{addToRefs}
       </Container>
     </Section>

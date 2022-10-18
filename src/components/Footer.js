@@ -135,10 +135,10 @@ function Footer() {
       </Container>
       <Bottom>
         <span>
-          &copy; {new Date().getFullYear()} Ping-Win project.
+          &copy; {new Date().getFullYear()} Ping-Win Project.
         </span>
         <span>
-          Yeah bro
+        Trying your luck !!
         </span>
       </Bottom>
     </Section>

@@ -1,15 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
-import img1 from '../../assets/1.jpg'
-import img2 from '../../assets/2.jpg'
-import img3 from '../../assets/3.jpg'
-import img4 from '../../assets/4.jpg'
-import img5 from '../../assets/5.jpg'
-import img6 from '../../assets/6.jpg'
-import img7 from '../../assets/7.jpg'
-import img8 from '../../assets/8.jpg'
-import img9 from '../../assets/9.jpg'
-import img10 from '../../assets/10.jpg'
+import img1 from '../../assets/12.png'
+import img2 from '../../assets/20.png'
+import img3 from '../../assets/17.png'
+import img4 from '../../assets/16.png'
+import img5 from '../../assets/19.png'
+import img6 from '../../assets/6.png'
+import img7 from '../../assets/7.png'
+import img8 from '../../assets/8.png'
+import img9 from '../../assets/9.png'
+import img10 from '../../assets/10.png'
 import Confetti from '../Icons/Confetti'
 
 
@@ -45,6 +45,7 @@ const Container = styled.div`
   justify-content: space-between;
   align-items:center;
   flex-wrap: wrap;
+  /* background-color: lightblue; */
 
   @media (max-width: 64em){
     width: 80% ;
@@ -54,6 +55,29 @@ const Container = styled.div`
     justify-content: center;
   }
 `
+const Containerv2 = styled.div`
+  width: 75% ;
+  margin: 2rem auto;
+
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+  flex-wrap: wrap;
+  /* background-color: lightblue; */
+
+  @media (max-width: 64em){
+    width: 80% ;
+  }
+  @media (max-width: 48em){
+    width: 90% ;
+    justify-content: center;
+  }
+`
+
+
+
+
+
 const Item = styled.div`
   width: calc(20rem - 4vw);
   padding: 1rem 0;
@@ -83,7 +107,6 @@ const ImageContainer = styled.div`
   width:90%;
   margin:0 auto;
   background-color:${props => props.theme.body};
-  /* border:1px solid ${props => props.theme.text}; */
   
 
   border-radius: 20px;
@@ -137,9 +160,11 @@ const Team = () => {
         <MemberComponent img ={img1 } name ="ANDREW" position ="developer Web3" />
         <MemberComponent img ={img2 } name ="John" position ="Marketing"/>
         <MemberComponent img ={img3 } name ="Tom" position ="Social Media"/>
+      </Container>
+      <Containerv2>
         <MemberComponent img ={img4 } name ="Maggie" position ="Graphic designer"/>
         <MemberComponent img ={img5 } name ="Zack" position ="CEO" />
-      </Container>
+      </Containerv2>
     </Section>
   )
 }

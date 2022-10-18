@@ -9,6 +9,7 @@ outline: none;
 border: none;
 
 font-size: ${props => props.theme.fontsm};
+font-weight:bold;
 padding: 0.9rem 2.3rem;
 border-radius:50px;
 cursor: pointer;
@@ -20,7 +21,6 @@ position: relative;
 }
 &::after{
     content: ' ';
-    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%) scale(0);

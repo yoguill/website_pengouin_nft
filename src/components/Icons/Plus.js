@@ -11,8 +11,8 @@ export function Plus(props) {
         <defs>
           <style>{'.cls-1{fill-rule:evenodd}'}</style>
         </defs>
-        <path className="cls-1" d="M.5 8.5v-1h15v1z" />
-        <path className="cls-1" d="M8.5 15.5h-1V.5h1z" />
+        <path className="cls-1" d="M.5 8.5v-1h15v1z" stroke="black" />
+        <path className="cls-1" d="M8.5 15.5h-1V.5h1z" stroke="black" />
       </svg>
     );
   }

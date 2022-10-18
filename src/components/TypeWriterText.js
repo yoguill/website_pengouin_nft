@@ -15,16 +15,16 @@ span{
     font-family:'Akaya Telivigala', cursive;
 }
 .text-1{
-    color : blue;
+    color : pink;
 }
 .text-2{
     color : green;
 }
 .text-3{
-    color : orange;
+    color : violet;
 }
 .text-4{
-    color : red;
+    color : orange;
 }
 
 @media (max-width: 70em){
@@ -85,7 +85,7 @@ const TypeWriterText = () => {
                 loop: true
             }}
                 onInit={(typewriter) => {
-                    typewriter.typeString('<span class="text-1">NFTs.</span>')
+                    typewriter.typeString('<span class="text-1">Nfts Project.</span>')
                         .pauseFor()
                         .deleteAll()
                         .typeString('<span class="text-2">Protect Biodiversity.</span>')
@@ -103,7 +103,7 @@ const TypeWriterText = () => {
             </Title>
             <Subtitle>Bored of somes project ? Try Something New !</Subtitle>
             <ButtonContainer>
-                <Button text="Explore" link="#about" />
+                <Button text="Explore on Opensea" link="https://opensea.io/fr" />
             </ButtonContainer>
         
         </>

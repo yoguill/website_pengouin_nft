@@ -19,6 +19,7 @@ margin: 3rem 0;
 
 const Title = styled.div`
 font-size: ${props => props.theme.fontsm};
+font-weight:bold;
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -72,7 +73,6 @@ const Accordion = ({title, children}) => {
             }
         </Title>
         <Reveal clicked={collapse}>
-            {console.log(children)}
             {children}
         </Reveal>
     </Container>

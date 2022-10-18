@@ -1,13 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
-import GIF from '../assets/test.mp4'  
+// import GIF from '../assets/test.mp4'  
+import GIF from '../assets/test.gif'  
 //importer la video {video]}
 
 
 const VideoContainer = styled.div`
 width:100%;
 
-video{
+img{
     width:100%;
     height: auto;
 }
@@ -19,7 +20,8 @@ video{
 const CoverVideo = () => {
   return (
     <VideoContainer>
-        <video src={GIF} type="video/mp4" autoPlay muted loop/>
+        {/* <video src={GIF} type="video/mp4" autoPlay muted loop/> */}
+        <img border="0" src={GIF}></img>
     </VideoContainer>
   )
 }

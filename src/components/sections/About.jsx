@@ -2,7 +2,7 @@ import React from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 import Carousel from '../Carousel'
 import Button from '../Button'
-import { dark } from '../../styles/Themes'
+import { light,dark } from '../../styles/Themes'
 
 const Section = styled.section`
   min-height: 100vh;
@@ -150,7 +150,7 @@ function About() {
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis magni facere, explicabo ipsa optio vel soluta quis voluptate cumque dicta voluptates, incidunt, voluptatibus odio fuga possimus aperiam doloribus molestias. Fugit?
           </SubTextLight>
           <ButtonContainer>
-            <ThemeProvider theme={dark}>
+            <ThemeProvider theme={light}>
               <Button text="JOIN OUR DISCORD" link="#" />
             </ThemeProvider>
           </ButtonContainer>

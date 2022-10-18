@@ -163,12 +163,12 @@ const Navigation = () => {
           <MenuItem onClick={() => scrollTo('faq')}>Faq</MenuItem>
           <MenuItem>
             <div className="mobile">
-              <Button text="Connect Wallet" link="https://google.com" />
+              <Button text="Mint" link="https://penguin-on-blockchain.web.app/" />
             </div>
           </MenuItem>
         </Menu>
         <div className="desktop">
-          <Button text="Connect Wallet" link="https://google.com" />
+          <Button text="Mint" link="https://penguin-on-blockchain.web.app/" />
         </div>
       </Navbar>
     </Section>
